@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>每个人都是一句诗</title>
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/loading.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/wrapperbg.css" type="text/css">
+  <link rel="stylesheet" href="./css/answer.css" type="text/css">
+  <link rel="stylesheet" href="./css/music.css" type="text/css">
+  <link rel="stylesheet" href="./css/result.css" type="text/css">
+  <link rel="stylesheet" href="./css/tui.css" type="text/css">
+</head>
+<body>
+  <!-- loading -->
+  <div class="body_logobg" id="loaddingWrap">
+    <div class="loadingbox xycenter">
+      <div class="loadingrange">
+        <div class="loading loadingPercent" id="loadingPercent"></div>
+      </div>
+      <p id="loading"></p>
+    </div>
+  </div>
+  <!-- 音乐 -->
+  <div class="icon_audio sound_icon_off" id="btn_audio"></div>
+  <!-- wrapper body_bg1-->
+  <div class="wrapper body_bg displaynone" id="minWrap">
+    <div class="minWrapper">
+      <!-- 引言 -->
+      <div class="mainConbox wrapYinyan" id="introductionWrap">
+        <img id="introductionTxt" class="xycenter" src="./img/yinyan.png" alt="">
+      </div>
+      <!-- 答题页 -->
+      <div class="mainConbox wrapAnswre displaynone" id="questionWrap">
+        <div class="answerbox" id="questionBox">
+          <div class="answerimg">
+            <img src="./img/image_18.png" alt="">
+          </div>
+          <div class="questionTit">
+            <span class="qnum qnum1"></span>
+            <span class="qtit">
+              <img src="./img/wenti_18.png" alt="">
+            </span>
+          </div>
+          <div class="questionoption">
+            <span class="option">A</span>
+          </div>
+          <div class="questionoption">
+            <span class="option">B</span>
+          </div>
+          <div class="questionoption">
+            <span class="option">C</span>
+          </div>
+        </div>
+      </div>
+      <!-- 结果页 -->
+      <div class="resultWrap displaynone" id="resultWrap">
+        <img src="./img/result.png" alt="">
+        <div class="rightBottom" id="rightBottom"></div>
+      </div>
+      <!-- 推广页 -->
+      <div class="tuiguangWrap displaynone" id="adWrap">
+        <div class="font_tuigT"></div>
+        <div class="tuiGif">
+          <img src="./img/gif.gif" alt="">
+        </div>
+        <div class="btn_back xcenter" id="btn_back"></div>
+        <div class="logo_tui"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 首页 -->
+  <div class="wrapIndex xycenter displaynone" id="indexWrap">
+    <img class="ycenter font_index" src="./img/index.png" alt="">
+    <a href="javascript:;" class="btn_start anipulse" id="btn_start"></a>
+    <div class="input_text">
+      <div class="textbox" id='textbox' placeholder='1' contenteditable='true' max-length='4'>输入姓名，探测最真实的你</div>
+    </div>
+    <div class="logo_ingdex"></div>
+  </div>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/pageResponse.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    window.onload = window.onresize = function () {
+      pageResponse({
+        selectors: '.minWrapper',
+        mode: 'contain',
+        width: '640',
+        height: '1030'
+      })
+    }
+  </script>
+</body>
+</html>

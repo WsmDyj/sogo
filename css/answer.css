@@ -1,0 +1,77 @@
+.answerbox {
+  width: 578px;
+  height: 685px;
+  background: #fdfaf0;
+  border-radius: 6px;
+  position: absolute;
+  left: 31px;
+  bottom: 37px;
+}
+.answerimg {
+  width: 588px;
+  height: 417px;
+  position: absolute;
+  left: -5px;
+  top: -295px;
+}
+.answerimg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* 题目 */
+.questionTit {
+  height: 217px;
+  position: relative;
+}
+.qnum {
+  width: 37px;
+  height: 30px;
+  position: absolute;
+  bottom: 27px;
+  left: 39px;
+}
+.qnum1{
+	background: url(../img/num1.png) no-repeat 100% 0;
+}
+.qtit{
+	position: absolute;
+	left: 94px;
+	bottom: 27px;
+}
+.qtit img{
+	display: block;
+	width: auto;
+	height: auto;
+}
+/* 选项 */
+.questionoption{
+	width: 442px;
+	height: 113px;
+	border: 2px solid #d6cdc0;
+	background: #eee9da;
+	box-sizing: border-box;
+	padding: 15px;
+	padding-left: 47px;
+	margin: 0 auto 19px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #5e4945;
+	position: relative;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.questionoption span.option{
+	position: absolute;
+	left: 15px;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 28px;
+	line-height: 30px;
+	top: 15px;
+}
+.questionoption.on{
+	border: 2px solid #a6937c;
+	background: #d6cdc0;
+}

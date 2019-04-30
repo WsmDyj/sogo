@@ -1,0 +1,14 @@
+.rightBottom {
+  display: block;
+  right: 0px;
+  position: absolute;
+  bottom: 10px;
+  width: 250px;
+  height: 100px;
+  color: #FFFFFF;
+  text-align: right;
+}
+.rightBottom img{
+	display: block;
+	float: right;
+}
